@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">  <!-- 문서의 문자 인코딩을 UTF-8로 설정합니다. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- 반응형 웹을 위한 뷰포트 설정 -->
+    <title>텍스트 리라이팅 앱</title>  <!-- 페이지 제목 -->
+    <link href="style.css" rel="stylesheet">  <!-- 스타일시트를 링크합니다. -->
+</head>
+<body>
+    <div class="container">
+        <h1>텍스트 리라이팅 앱</h1>
+        <form id="textForm">  <!-- 텍스트를 입력받기 위한 폼 -->
+            <textarea id="userInput" placeholder="리라이팅할 텍스트를 입력하세요..." required></textarea>  <!-- 사용자가 입력할 텍스트 영역 -->
+            <button type="submit">리라이팅하기</button>  <!-- 폼 제출 버튼 -->
+        </form>
+        <div id="output">
+            <h2>리라이팅된 텍스트</h2>
+            <p id="rewrittenText"></p>  <!-- 리라이팅된 텍스트를 표시할 영역 -->
+        </div>
+    </div>
+    <script src="script.js"></script>  <!-- JavaScript 파일을 링크합니다. -->
+</body>
+</html>
