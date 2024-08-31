@@ -1,32 +1,76 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">  <!-- 문서의 문자 인코딩을 UTF-8로 설정합니다. -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- 반응형 웹을 위한 뷰포트 설정 -->
-    <title>마케터들의 필수 도우미 <br> <b>오탈자 수정 + 카피라이팅 워싱 앱</b></title>  <!-- 페이지 제목 -->
-    <link href="style.css" rel="stylesheet">  <!-- 스타일시트를 링크합니다. -->
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2WPQ2V4XPF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마케터들의 필수 도우미 | 오탈자 수정 + 카피라이팅 워싱 앱</title>
 
-  gtag('config', 'G-2WPQ2V4XPF');
-</script>
+    <!-- 메타 태그 -->
+    <meta name="description" content="오탈자 수정과 카피라이팅 워싱을 한번에! 이 도구는 마케터들이 쉽고 편하게 텍스트를 수정하고 세련되게 바꿀 수 있도록 도와줍니다.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="2tmdwo">
+    <meta name="keywords" content="맞춤법 검사, 카피라이팅, 텍스트 워싱, 오탈자 수정, 마케팅 도구">
+
+    <!-- Open Graph 메타 태그 -->
+    <meta property="og:title" content="오탈자 수정 + 카피라이팅 워싱 앱">
+    <meta property="og:description" content="마케터들이 텍스트를 수정하고 세련되게 바꿀 수 있는 필수 도구!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://web-frontend2-ly9ig2ti56e078b0.sel5.cloudtype.app/">
+    <meta property="og:image" content="https://imgur.com/a/WJKRZTU">
+
+    <!-- 트위터 카드 메타 태그 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="오탈자 수정 + 카피라이팅 워싱 앱">
+    <meta name="twitter:description" content="마케터들이 텍스트를 수정하고 세련되게 바꿀 수 있는 필수 도구!">
+    <meta name="twitter:image" content="https://imgur.com/a/WJKRZTU">
+    <meta name="twitter:site" content="@YourTwitterHandle">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://web-frontend2-ly9ig2ti56e078b0.sel5.cloudtype.app/">
+
+    <!-- 구조화 데이터 (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://yourwebsite.com",
+      "name": "오탈자 수정 + 카피라이팅 워싱 앱",
+      "author": {
+        "@type": "Organization",
+        "name": "Seungjae Lee"
+      },
+      "description": "마케터들이 쉽고 편하게 텍스트를 수정하고 세련되게 바꿀 수 있는 도구입니다.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "2tmdwo"
+      }
+    }
+    </script>
+
+    <!-- Google Tag Manager (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2WPQ2V4XPF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-2WPQ2V4XPF');
+    </script>
+
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <h1>맞춤법 검사 + 카피워싱을 한번에 쉽고 편하게!</h1>
-        <form id="textForm">  <!-- 텍스트를 입력받기 위한 폼 -->
-            <textarea id="userInput" placeholder="워싱할 텍스트를 입력하세요..." required></textarea>  <!-- 사용자가 입력할 텍스트 영역 -->
-            <button type="submit">텍스트 워싱하기</button>  <!-- 폼 제출 버튼 -->
+        <form id="textForm">
+            <textarea id="userInput" placeholder="워싱할 텍스트를 입력하세요..." required></textarea>
+            <button type="submit">텍스트 워싱하기</button>
         </form>
         <div id="output">
             <h2>워싱된 텍스트</h2>
-            <p id="rewrittenText"></p>  <!-- 워싱된 텍스트를 표시할 영역 -->
+            <p id="rewrittenText"></p>
         </div>
     </div>
-    <script src="script.js"></script>  <!-- JavaScript 파일을 링크합니다. -->
+    <script src="script.js"></script>
 </body>
 </html>
