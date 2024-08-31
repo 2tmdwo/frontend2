@@ -72,5 +72,19 @@
         </div>
     </div>
     <script src="script.js"></script>
+      <!-- 버튼 클릭 이벤트 트래킹 코드 -->
+      <script>
+        // 버튼 클릭 이벤트를 트리거하는 함수
+        function trackButtonClick() {
+            gtag('event', 'button_click', {
+                'event_category': 'engagement',
+                'event_label': 'Button Click',
+                'value': 1
+            });
+        }
+
+        // 버튼에 클릭 이벤트 리스너 추가
+        document.getElementById('your_button_id').addEventListener('click', trackButtonClick);
+    </script>
 </body>
 </html>
